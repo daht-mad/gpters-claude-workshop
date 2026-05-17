@@ -29,6 +29,10 @@ function ChevronIcon({ isOpen }: { isOpen: boolean }) {
   );
 }
 
+function stripNumberPrefix(name: string): string {
+  return name.replace(/^\d+(?:-\d+)*[-.]/, "");
+}
+
 function TreeNode({ node, depth = 0 }: { node: ContentNode; depth?: number }) {
   const pathname = usePathname();
   const folderPath = `/docs/${node.slugPath}`;
@@ -40,6 +44,7 @@ function TreeNode({ node, depth = 0 }: { node: ContentNode; depth?: number }) {
   const isActive = pathname === href || pathname.startsWith(`${href}/`);
 
   const paddingLeft = depth === 0 ? undefined : `${depth * 1.25 + 0.75}rem`;
+  const displayFolderName = stripNumberPrefix(node.name);
 
   if (isFolder) {
     const visibleChildren = node.children;
@@ -53,7 +58,7 @@ function TreeNode({ node, depth = 0 }: { node: ContentNode; depth?: number }) {
             className="flex items-center gap-1.5 w-full px-3 mb-1.5 text-[11px] font-semibold tracking-wider uppercase text-stone-400 dark:text-gray-500 hover:text-stone-600 dark:hover:text-gray-400 transition-colors"
           >
             <ChevronIcon isOpen={isOpen} />
-            <span>{node.name}</span>
+            <span>{displayFolderName}</span>
           </button>
           {isOpen && visibleChildren && (
             <div className="space-y-0.5">
@@ -87,7 +92,7 @@ function TreeNode({ node, depth = 0 }: { node: ContentNode; depth?: number }) {
             data-folder={node.name}
             className="flex-1 px-2 py-1.5 text-sm text-left font-medium text-stone-700 dark:text-gray-300 hover:bg-stone-100 dark:hover:bg-gray-800/50 rounded-md transition-colors"
           >
-            {node.name}
+            {displayFolderName}
           </button>
         </div>
         {isOpen && visibleChildren && (
