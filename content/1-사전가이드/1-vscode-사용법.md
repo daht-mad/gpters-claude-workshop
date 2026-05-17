@@ -21,7 +21,7 @@
 
 ---
 
-## 2. 테마를 Light Modern으로 바꾸기
+## 2. 테마를 Light Modern으로 바꾸기 (선택)
 
 눈에 편한 밝은 테마로 변경합니다.
 
@@ -124,8 +124,10 @@ Claude Code CLI를 사용하려면 터미널이 필요합니다.
 
 ---
 
+## 8. 알아두면 편한 기능들 · 단축키
+
 <details>
-<summary style="cursor: pointer; padding: 0.5rem 0; margin: 1rem 0;"><span style="font-size: 1.5em; font-weight: 700;">8. 알아두면 편한 기능들 · 단축키 (펼쳐서 보기)</span></summary>
+<summary style="cursor: pointer; padding: 0.5rem 0; color: #6b7280;">▶ 펼쳐서 보기</summary>
 
 ### 글씨가 너무 작을 때
 

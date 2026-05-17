@@ -33,14 +33,10 @@ export function TableOfContents({ content }: TableOfContentsProps) {
 
     for (const line of lines) {
       const h2Match = line.match(/^## (.+)$/);
-      const h3Match = line.match(/^### (.+)$/);
 
       if (h2Match) {
         const text = h2Match[1].trim();
         result.push({ id: slugify(text), text, level: 2 });
-      } else if (h3Match) {
-        const text = h3Match[1].trim();
-        result.push({ id: slugify(text), text, level: 3 });
       }
     }
 
