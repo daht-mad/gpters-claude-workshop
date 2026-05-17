@@ -5,7 +5,23 @@
 
 ---
 
-## 1. 테마를 Light Modern으로 바꾸기
+## 1. 한국어 언어팩 설치 (선택)
+
+메뉴를 한국어로 바꾸고 싶다면 언어팩을 설치하세요.
+
+1. 왼쪽 사이드바에서 **Extensions** 아이콘 클릭 (네모 4개 모양)
+2. 검색창에 **Korean Language Pack** 입력
+3. **Korean Language Pack for Visual Studio Code** (Microsoft 제작) → **Install** 클릭
+4. 오른쪽 아래에 **"Change Language and Restart"** 알림 → 클릭
+5. VS Code가 재시작되며 한국어로 변경됨
+
+> 💡 영어 메뉴가 편하신 분은 건너뛰셔도 됩니다.
+
+![](../../../public/images/CleanShot%202026-02-21%20at%2017.02.20@2x.png)
+
+---
+
+## 2. 테마를 Light Modern으로 바꾸기
 
 눈에 편한 밝은 테마로 변경합니다.
 
@@ -21,7 +37,7 @@
 
 ---
 
-## 2. 자동저장 켜기
+## 3. 자동저장 켜기
 
 파일 저장을 깜빡해서 헤매는 일을 방지합니다.
 
@@ -33,22 +49,6 @@
 > 💡 **강력 추천!** 자동저장을 켜두면 저장 버튼을 누르지 않아도 파일이 자동으로 저장됩니다.
 
 ![](../../../public/images/CleanShot%202026-02-22%20at%2001.03.09@2x.png)
-
----
-
-## 3. 한국어 언어팩 설치 (선택)
-
-메뉴를 한국어로 바꾸고 싶다면 언어팩을 설치하세요.
-
-1. 왼쪽 사이드바에서 **Extensions** 아이콘 클릭 (네모 4개 모양)
-2. 검색창에 **Korean Language Pack** 입력
-3. **Korean Language Pack for Visual Studio Code** (Microsoft 제작) → **Install** 클릭
-4. 오른쪽 아래에 **"Change Language and Restart"** 알림 → 클릭
-5. VS Code가 재시작되며 한국어로 변경됨
-
-> 💡 영어 메뉴가 편하신 분은 건너뛰셔도 됩니다.
-
-![](../../../public/images/CleanShot%202026-02-21%20at%2017.02.20@2x.png)
 
 ---
 
