@@ -24,7 +24,7 @@ export default function DocsIndexPage() {
 
   return (
     <div className="max-w-4xl mx-auto px-8 py-12">
-      <h1 className="text-2xl font-bold">🚢 다혜의 방주</h1>
+      <h1 className="text-2xl font-bold">지피터스 실습세션</h1>
       <p className="mt-4 text-gray-600 dark:text-gray-400">
         왼쪽 사이드바에서 문서를 선택하세요.
       </p>

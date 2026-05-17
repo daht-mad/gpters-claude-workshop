@@ -27,7 +27,7 @@ export function MobileHeader({ onMenuClick }: MobileHeaderProps) {
         </svg>
       </button>
       <span className="ml-3 font-semibold text-stone-800 dark:text-gray-100">
-        🚢 다혜의 방주
+        지피터스 실습세션
       </span>
     </header>
   );

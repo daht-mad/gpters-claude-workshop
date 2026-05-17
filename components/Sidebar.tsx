@@ -184,7 +184,7 @@ export function Sidebar({ tree, isOpen = false, onClose }: SidebarProps) {
         <div className="p-4">
           <Link href="/docs" className="block border-b border-stone-200 dark:border-gray-800 pb-4 mb-4">
             <h1 className="text-lg font-bold text-stone-800 dark:text-gray-100">
-              🚢 다혜의 방주
+              지피터스 실습세션
             </h1>
             <p className="text-xs text-stone-400 dark:text-gray-500 mt-0.5">
               지피터스 22기 · 2026.5.18
