@@ -23,7 +23,7 @@ export function DocsLayoutClient({ tree, children }: DocsLayoutClientProps) {
         onClose={() => setSidebarOpen(false)}
       />
 
-      <main className="flex-1 overflow-x-hidden flex justify-center pt-14 md:pt-0">
+      <main className="flex-1 min-w-0 overflow-x-hidden pt-14 md:pt-0">
         {children}
       </main>
     </div>
