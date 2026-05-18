@@ -101,6 +101,8 @@ brew install git
 
 **⚠️ Mac 사용자: PATH 설정 메시지가 나올 경우**
 
+<div style="border-bottom: 1px solid #e5e7eb; margin: 0.5rem 0 0.85rem;"></div>
+
 설치 후 아래와 같은 메시지가 나오면:
 
 ```
@@ -121,6 +123,8 @@ echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.zshrc && source ~/.zshrc
 <div style="margin: 1.25rem 0 1.25rem 1.5rem; padding: 0.75rem 1.25rem; background: #f9fafb; border-left: 3px solid #e5e7eb; border-radius: 0 0.5rem 0.5rem 0;">
 
 **⚠️ Windows 사용자: PATH 설정 (필수)**
+
+<div style="border-bottom: 1px solid #e5e7eb; margin: 0.5rem 0 0.85rem;"></div>
 
 Windows에서는 `claude` 명령어가 바로 안 되는 경우가 많습니다. 아래 설정을 해주세요.
 
