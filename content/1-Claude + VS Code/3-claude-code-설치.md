@@ -97,7 +97,9 @@ brew install git
 3. VS Code **완전히 종료** 후 다시 열기
 4. 터미널에서 확인: `claude --version` 입력 → 버전 나오면 성공!
 
-### ⚠️ Mac 사용자: PATH 설정 메시지가 나올 경우
+<div style="margin: 1.25rem 0 1.25rem 1.5rem; padding: 0.75rem 1.25rem; background: #f9fafb; border-left: 3px solid #e5e7eb; border-radius: 0 0.5rem 0.5rem 0;">
+
+**⚠️ Mac 사용자: PATH 설정 메시지가 나올 경우**
 
 설치 후 아래와 같은 메시지가 나오면:
 
@@ -114,7 +116,11 @@ echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.zshrc && source ~/.zshrc
 
 그 다음 `claude --version` 입력 → 버전 나오면 성공!
 
-### ⚠️ Windows 사용자: PATH 설정 (필수)
+</div>
+
+<div style="margin: 1.25rem 0 1.25rem 1.5rem; padding: 0.75rem 1.25rem; background: #f9fafb; border-left: 3px solid #e5e7eb; border-radius: 0 0.5rem 0.5rem 0;">
+
+**⚠️ Windows 사용자: PATH 설정 (필수)**
 
 Windows에서는 `claude` 명령어가 바로 안 되는 경우가 많습니다. 아래 설정을 해주세요.
 
@@ -124,6 +130,8 @@ Windows에서는 `claude` 명령어가 바로 안 되는 경우가 많습니다.
 4. **새로 만들기** → `%USERPROFILE%\.claude\bin` 입력 → **확인**
 5. VS Code **완전히 종료** 후 다시 열기
 6. 터미널에서 `claude --version` 다시 확인
+
+</div>
 
 ---
 
