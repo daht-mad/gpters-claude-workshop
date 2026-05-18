@@ -1,4 +1,4 @@
-# 2. Claude Code 설치
+# 3. Claude Code 설치
 
 > 본인 컴퓨터가 **Mac**인지 **Windows**인지 확인 후, 해당 섹션만 따라하세요.
 >
@@ -27,7 +27,53 @@
 
 ---
 
-## Step 2. Claude Code CLI 설치
+## Step 2. Homebrew & Git 설치
+
+> 스킬을 설치하고 공유하려면 **Git**이 필요합니다. 본인 OS에 맞는 섹션만 따라하세요.
+
+### Mac
+
+**1. Homebrew 설치**
+
+VS Code 상단 메뉴에서 **Terminal → New Terminal**을 열고, 아래 명령어를 붙여넣기 → Enter:
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+> 💡 Mac 로그인 비밀번호를 물어보면 입력하세요. (입력할 때 화면에 글자가 안 보이는 게 정상이에요)
+
+설치가 끝난 뒤 아래와 같은 메시지가 나오면, 그 명령어를 **그대로 복사해서 실행**하세요:
+
+```bash
+echo >> ~/.zprofile
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
+```
+
+확인: `brew --version` 입력 → 버전이 나오면 성공!
+
+**2. Git 설치**
+
+```bash
+brew install git
+```
+
+확인: `git --version` 입력 → 버전이 나오면 성공!
+
+### Windows
+
+1. [git-scm.com/download/win](https://git-scm.com/download/win) 접속
+2. **"64-bit Git for Windows Setup"** 다운로드 → 실행
+3. 모든 옵션을 **기본값 그대로** 두고 설치 진행
+4. VS Code를 **완전히 종료한 후 다시 열기**
+5. 터미널에서 확인: `git --version` 입력 → 버전이 나오면 성공!
+
+> ⚠️ VS Code를 재시작하지 않으면 `git` 명령어가 인식되지 않습니다.
+
+---
+
+## Step 3. Claude Code CLI 설치
 
 1. VS Code 상단 메뉴에서 **Terminal** → **New Terminal** 클릭
    > 💡 단축키: `` Ctrl + ` `` (백틱, 숫자 1 왼쪽 키)
@@ -79,18 +125,18 @@ Windows에서는 `claude` 명령어가 바로 안 되는 경우가 많습니다.
 
 ---
 
-## Step 3. Claude Code 로그인
+## Step 4. Claude Code 로그인
 
 > Extension(VS Code 패널)과 터미널(CLI) 양쪽 모두 로그인합니다.
 
-### 3-1. Extension 로그인
+### 4-1. Extension 로그인
 
 1. Claude 패널에서 **Sign In** 버튼 클릭
 2. 브라우저에서 Claude 계정 로그인 → **허용** 클릭
 3. Claude 패널에 `안녕하세요` 입력 → 응답 오면 **완료!**
 	![](../../../public/images/CleanShot%202026-02-22%20at%2000.46.31@2x.png)
 
-### 3-2. 터미널(CLI) 로그인
+### 4-2. 터미널(CLI) 로그인
 
 1. VS Code 상단 메뉴에서 **Terminal** → **New Terminal** 클릭 (단축키: `` Ctrl + ` ``)
 2. `claude` 입력 → Enter
